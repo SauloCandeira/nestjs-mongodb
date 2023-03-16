@@ -37,10 +37,11 @@ export class AppService {
   }
 
   // deleting Avatar
-  async deleteAvatar(id: string): Promise<User> {
-    return await this.userModel.updateOne(
-      { _id: id },
-      { $unset: { avatar: '' } },
+  async deleteAvatar(id): Promise<User> {
+    return this.userModel.findByIdAndUpdate(
+      id,
+      { avatar: null },
+      { new: true },
     );
   }
 

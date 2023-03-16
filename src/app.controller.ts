@@ -37,7 +37,7 @@ export class AppController {
   }
 
   @Delete(':id/avatar')
-  async deleteAvatar(@Param('id') id: string) {
+  async deleteAvatar(@Param('id') id: string): Promise<User> {
     return this.appService.deleteAvatar(id);
   }
 
