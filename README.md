@@ -32,18 +32,21 @@ $ npm run test:cov
 
 ## ENDPOINTS
 
-Create Users: (POST)
-127.0.0.1:3000/
-Body (Form URL Enconded)
-username ->
-description ->
-avatar -> 
+1.0 - Create Users: (POST)
+    127.0.0.1:3000/
+    Body (Form URL Enconded)
+    username ->
+    description ->
+    avatar -> 
 
-Searcg all users: (GET)
-127.0.0.1:3000/
+2.0 - Search all users: (GET)
+    127.0.0.1:3000/
 
-Search User by ID: (GET)
-127.0.0.1:3000/:id
+3.0 - Search User by ID: (GET)
+    127.0.0.1:3000/:id
 
-Delete USer (DELETE)
-127.0.0.1:3000/:id
+4.0 - Delete User (DELETE)
+    127.0.0.1:3000/:id
+
+5.0 - Delete Avatar (DELETE)
+    127.0.0.1:3000/:id/avatar
